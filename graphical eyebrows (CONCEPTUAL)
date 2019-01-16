@@ -1,0 +1,24 @@
+import cc.arduino.*;
+import org.firmata.*;
+import processing.serial.*;
+
+void setup(){
+  size(640, 480);  // Size must be the first statement
+  stroke(255);     // Set line drawing color to white
+  frameRate(10000);
+}
+
+void draw(){
+  background(0);
+  
+  //eyebrows
+  if(closeEnough){
+    fill(101,111,22);
+    rect(width/4, 75, 100, 20);
+    rect(3 * width/5, 75, 100, 20);
+  }else{
+    fill(100,0,0);
+    rect(width/4, 75, 100, 20);
+    rect(3 * width/5, 75, 100, 20);
+  }
+}
