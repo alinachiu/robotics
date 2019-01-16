@@ -8,6 +8,8 @@ import java.awt.*;
 Capture video;
 OpenCV opencv;
 
+boolean closeEnough = false;
+
 //for eyebrows
 int screenArea = 307200;
 int faceWidth;
@@ -84,9 +86,11 @@ void initEyebrows(){
     for (int i=0;i<frames;i++){
       if (i<540){
         eyebrows[i] = 0;
+        closeEnough = true;
       }
       else{
         eyebrows[i] =45;
+        closeEnough = false;
       }
   }
 }
