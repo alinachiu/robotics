@@ -1,5 +1,5 @@
 # Robotics Interactive Face 
-The code used to create the interactive face.
+The code used to create the interactive face robot for the Westridge robotics team.
 
 ### Navigation
 
